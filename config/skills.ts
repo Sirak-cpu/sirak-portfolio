@@ -19,7 +19,7 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "AWS Bedrock",
     description:
       "Enterprise AI infrastructure with Titan Text Embeddings V2, Bedrock Knowledge Bases, and Bedrock Agent Runtime.",
-    rating: 5,
+    rating: 4,
     icon: Icons.amazonaws,
   },
   {
@@ -33,7 +33,7 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "Python",
     description:
       "Develop autonomous AI agents, data pipelines, API integrations, and vector search tooling.",
-    rating: 5,
+    rating: 4,
     icon: Icons.python,
   },
   {
@@ -47,7 +47,7 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "Google Gemini API",
     description:
       "Multimodal document processing, structured schema extraction from binary files, and tool-augmented agent design.",
-    rating: 5,
+    rating: 4,
     icon: Icons.gemini,
   },
   {

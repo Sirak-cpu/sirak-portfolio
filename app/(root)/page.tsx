@@ -78,7 +78,7 @@ export default function IndexPage() {
             width={90}
             sizes="100vw"
             className="bg-primary rounded-full mb-4 h-auto w-[35%] max-w-[8rem] sm:max-w-[10rem] md:max-w-[11rem] border-4 sm:border-8 border-primary aspect-square object-cover"
-            alt="Sirak Embibel - AI Automation Specialist & Applied AI Engineer"
+            alt="Sirak Embibel"
             priority
           />
           <AnimatedText
@@ -170,7 +170,7 @@ export default function IndexPage() {
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/projects">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              View All <Icons.chevronRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
         </AnimatedText>
@@ -209,7 +209,7 @@ export default function IndexPage() {
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/experience">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              View All <Icons.chevronRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
         </AnimatedText>
@@ -240,7 +240,7 @@ export default function IndexPage() {
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/skills">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              View All <Icons.chevronRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
         </AnimatedText>

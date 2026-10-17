@@ -22,7 +22,7 @@ export interface ProjectInterface {
   youtubeLink?: string;
   techStack: ValidSkills[];
   startDate: Date;
-  endDate: Date;
+  endDate?: Date;
   companyLogoImg: any;
   descriptionDetails: DescriptionDetailsInterface;
   pagesInfoArr: PagesInfoInterface[];
@@ -45,7 +45,7 @@ export const Projects: ProjectInterface[] = [
       "Prompt Engineering",
     ],
     startDate: new Date("2026-08-24T12:00:00Z"),
-    endDate: new Date("2026-11-01"),
+    endDate: new Date("2026-09-15T12:00:00Z"),
     companyLogoImg: "/logo.png",
     pagesInfoArr: [
       {
@@ -92,7 +92,7 @@ export const Projects: ProjectInterface[] = [
       "Tailwind CSS",
     ],
     startDate: new Date("2026-10-03T12:00:00Z"),
-    endDate: new Date("2026-11-01"),
+    endDate: new Date("2026-10-14T12:00:00Z"),
     companyLogoImg: "/projects/equipflow/img3.jpg",
     pagesInfoArr: [
       {
@@ -138,7 +138,7 @@ export const Projects: ProjectInterface[] = [
       "Health Systems",
     ],
     startDate: new Date("2026-08-20T12:00:00Z"),
-    endDate: new Date("2026-11-01"),
+    endDate: new Date("2026-09-02T12:00:00Z"),
     companyLogoImg: "/logo.png",
     pagesInfoArr: [
       {
@@ -178,7 +178,7 @@ export const Projects: ProjectInterface[] = [
       "Python",
     ],
     startDate: new Date("2026-08-30T12:00:00Z"),
-    endDate: new Date("2026-11-01"),
+    endDate: new Date("2026-09-18T12:00:00Z"),
     companyLogoImg: "/logo.png",
     pagesInfoArr: [
       {

@@ -47,6 +47,16 @@ export async function generateMetadata({
       description: project.shortDescription,
       type: "article",
       url: `${siteConfig.url}/projects/${projectId}`,
+      images: [
+        {
+          url: project.companyLogoImg.startsWith("http")
+            ? project.companyLogoImg
+            : `${siteConfig.url}${project.companyLogoImg}`,
+          width: 1280,
+          height: 720,
+          alt: project.companyName,
+        },
+      ],
     },
   };
 }
@@ -163,7 +173,6 @@ export default async function Project({ params }: ProjectPageProps) {
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
           Description
         </h2>
-        {/* {<project.descriptionComponent />} */}
         <ProjectDescription
           paragraphs={project.descriptionDetails.paragraphs}
           bullets={project.descriptionDetails.bullets}
@@ -202,15 +211,15 @@ export default async function Project({ params }: ProjectPageProps) {
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
           Page Info
         </h2>
-        {project.pagesInfoArr.map((page, ind) => (
-          <div key={ind}>
+        {project.pagesInfoArr.map((page) => (
+          <div key={page.title}>
             <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
               <Icons.star className="h-5 w-5 mr-2" /> {page.title}
             </h3>
             <div>
               <p>{page.description}</p>
-              {page.imgArr.map((img, ind) => (
-                <div key={ind} className="my-6 w-full overflow-hidden rounded-lg border bg-muted shadow-sm">
+              {page.imgArr.map((img) => (
+                <div key={img} className="my-6 w-full overflow-hidden rounded-lg border bg-muted shadow-sm">
                   <Image
                     src={img}
                     alt={page.title || img}
@@ -218,7 +227,6 @@ export default async function Project({ params }: ProjectPageProps) {
                     height={720}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                     className="w-full h-auto transition-colors"
-                    priority
                   />
                 </div>
               ))}

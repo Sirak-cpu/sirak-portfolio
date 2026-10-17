@@ -60,7 +60,7 @@ export function ContactForm() {
         storeModal.onOpen({
           title: "Thank You!",
           description:
-            "Your message has been received! Sirak will review your inquiry and get back to you shortly.",
+            "Your message has been received! Sirak will review your inquiry and get back to you shortly. For urgent inquiries, feel free to email directly at sirakbayet@gmail.com.",
           icon: Icons.successAnimated,
         });
       } else {
