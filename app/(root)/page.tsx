@@ -10,13 +10,14 @@ import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
 
 import ExperienceCard from "@/components/experience/experience-card";
+import { FeaturedProjectsGrid } from "@/components/projects/featured-projects-grid";
 import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
 
 import { experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
-import { featuredProjects } from "@/config/projects";
+import { Projects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
@@ -153,27 +154,7 @@ export default function IndexPage() {
             {pagesConfig.projects.description}
           </AnimatedText>
         </div>
-        <div className="w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full items-stretch">
-            {featuredProjects.map((exp, index) => (
-              <AnimatedSection
-                key={exp.id}
-                delay={0.1 * (index + 1)}
-                direction="up"
-                className="h-full w-full min-w-0"
-              >
-                <ProjectCard project={exp} />
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/projects">
-            <Button variant={"outline"} className="rounded-xl">
-              View All <Icons.chevronRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
-        </AnimatedText>
+        <FeaturedProjectsGrid projects={Projects} initialCount={3} />
       </AnimatedSection>
       <AnimatedSection
         direction="up"
