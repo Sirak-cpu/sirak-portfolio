@@ -28,8 +28,8 @@ export const SocialLinks: SocialInterface[] = [
   },
   {
     name: "Phone",
-    username: "0910835614",
+    username: "+251910835614",
     icon: Icons.contact,
-    link: "tel:0910835614",
+    link: "tel:+251910835614",
   },
 ];

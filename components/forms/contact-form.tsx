@@ -67,7 +67,7 @@ export function ContactForm() {
         storeModal.onOpen({
           title: "Unable to Send Automatically",
           description:
-            "Please send an email directly to sirakbayet@gmail.com or call 0910835614.",
+            "Please send an email directly to sirakbayet@gmail.com or call +251910835614.",
           icon: Icons.close,
         });
       }

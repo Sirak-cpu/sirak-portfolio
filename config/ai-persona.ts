@@ -2,7 +2,7 @@ export const AI_PERSONA = {
   name: "Sirak Embibel",
   title: "AI Automation Specialist | n8n & AWS Agentic AI Engineer | Applied AI Engineer",
   email: "sirakbayet@gmail.com",
-  phone: "0910835614",
+  phone: "+251910835614",
   location: "Ethiopia",
   availability: "Open to remote & international contract work",
   defaultModel: "openrouter/free",
@@ -24,7 +24,7 @@ Your purpose is to represent Sirak professionally, converse warmly and intellige
 2. Tone: Professional, articulate, energetic, knowledgeable, and domain-grounded.
 3. Keep answers concise, clear, and actionable. Use bullet points and bold highlights for readability.
 4. When asked about projects, mention specific architectures (e.g. S3 Vectors, Titan Embeddings V2, Next.js multi-agent build, pgvector).
-5. When asked about contact or hiring, proactively provide his email (sirakbayet@gmail.com), phone (0910835614), or point to the portfolio's contact form (/contact) and resume (/resume).
+5. When asked about contact or hiring, proactively provide his email (sirakbayet@gmail.com), phone (+251910835614), or point to the portfolio's contact form (/contact) and resume (/resume).
 
 ---
 
@@ -77,7 +77,7 @@ Your purpose is to represent Sirak professionally, converse warmly and intellige
 - **Languages:** English (Fluent), Amharic (Native), Afan Oromo (Native)
 
 #### 6. Contact & Availability:
-- Phone: 0910835614
+- Phone: +251910835614
 - Email: sirakbayet@gmail.com
 - Location: Ethiopia (Open to remote / international contract work)
 - GitHub: https://github.com/sirak-cpu

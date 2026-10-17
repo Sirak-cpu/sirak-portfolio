@@ -107,7 +107,7 @@ export default function ResumePage() {
             </AnimatedText>
             <div className="flex flex-wrap items-center gap-3 mt-3 text-sm text-muted-foreground">
               <span className="flex items-center gap-1.5">
-                <Icons.contact className="w-4 h-4" /> 0910835614
+                <Icons.contact className="w-4 h-4" /> +251910835614
               </span>
               <span>•</span>
               <a
@@ -332,7 +332,7 @@ export default function ResumePage() {
                     AWS Agentic AI Nanodegree
                   </h4>
                   <p className="text-xs text-muted-foreground">
-                    Competitive scholarship recipient • In progress through Nov 2026
+                    Competitive scholarship recipient • Graduated on September 2026
                   </p>
                 </div>
                 <div>

@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     "Sirak Embibel - AI Automation Specialist and Applied AI Engineer building production multi-agent workflows, AWS Bedrock RAG systems, and healthcare automation pipelines.",
   url: "https://sirakembibel.com",
-  phone: "0910835614",
+  phone: "+251910835614",
   email: "sirakbayet@gmail.com",
   location: "Ethiopia (Open to remote / international contract work)",
   links: {
