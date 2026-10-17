@@ -58,35 +58,35 @@ This is a personal portfolio for **Sirak Embibel**, an AI Automation Specialist 
 
 ## 4. Findings Summary
 
-| # | Area | Severity | Issue |
-|---|---|---|---|
-| C1 | Content | 🔴 High | Project screenshots still use `/logo.png` placeholder for 3 of 4 projects |
-| C2 | Content | 🔴 High | `featuredProjects` is a hardcoded `slice(0,3)` — 4th project never appears on home page |
-| C3 | Content | 🟡 Medium | `endDate` on all projects set to `2026-11-01` — not meaningful |
-| C4 | Content | 🟡 Medium | `experience.ts`: `description` and `achievements` arrays are near-identical duplicates in 3 of 4 roles |
-| C5 | Content | 🟡 Medium | All experience entries use `/logo.png` as company logo |
-| C6 | Content | 🟢 Low | Skills ratings are all 5/5 — does not differentiate proficiency levels |
-| Q1 | Code Quality | 🔴 High | `<time dateTime>` uses `Date.now().toString()` instead of the actual project date |
-| Q2 | Code Quality | 🟡 Medium | `page.tsx` list items use array index as React `key` in multiple places |
-| Q3 | Code Quality | 🟡 Medium | `next.config.js` uses deprecated `turbopack.root` option |
-| Q4 | Code Quality | 🟡 Medium | No error boundaries anywhere in the component tree |
-| Q5 | Code Quality | 🟡 Medium | No `loading.tsx` streaming fallbacks for any route |
-| Q6 | Code Quality | 🟢 Low | `projectId` page has an unused commented-out line (`{/* {<project.descriptionComponent />} */}`) |
-| S1 | SEO | 🔴 High | OpenGraph image points to `profile-img.jpg` — no dedicated OG image (1200×630) |
-| S2 | SEO | 🟡 Medium | Project detail pages have no OpenGraph `image` in their `generateMetadata` |
-| S3 | SEO | 🟡 Medium | `/resume` page is not listed in `routesConfig.mainNav` — not linked from the main navbar |
-| S4 | SEO | 🟢 Low | `robots.txt` exists but has not been verified to allow all important routes |
-| U1 | UX | 🟡 Medium | Contact form depends on Google Form env vars — if not configured, visitors see no error, form silently drops |
-| U2 | UX | 🟡 Medium | AI Twin chatbot shows a raw developer-facing fallback message (with `.env` instructions) to real visitors when `OPENROUTER_API_KEY` is missing |
-| U3 | UX | 🟢 Low | "View All" buttons on home page sections use a chevron-down icon — misleading; should be chevron-right or an arrow |
-| U4 | UX | 🟢 Low | Profile photo `alt` text includes the full job title — long for an `alt`, better as a brief label |
-| P1 | Performance | 🟡 Medium | All `pagesInfoArr` images use `priority` prop — over-eagerly loaded, even for below-fold images |
-| P2 | Performance | 🟡 Medium | No remote image domains configured in `next.config.js` — any future external image URLs will break |
-| P3 | Performance | 🟢 Low | Duplicate EquipFlow images exist in two locations: `/public/images/` and `/public/projects/equipflow/` |
-| D1 | Deployment | 🔴 High | `OPENROUTER_API_KEY` likely not set in the production environment — AI Twin will be offline for all real visitors |
-| D2 | Deployment | 🟡 Medium | No `.env.example` file — environment variables required are not documented anywhere |
-| D3 | Deployment | 🟡 Medium | No git repository initialized in the project folder — no version history, no easy deployment via GitHub |
-| D4 | Deployment | 🟢 Low | `vercel.svg` and `next.svg` remain in `/public/` — template artifacts, not used in the portfolio |
+| # | Area | Severity | Issue | Status |
+|---|---|---|---|---|
+| C1 | Content | 🔴 High | Project screenshots still use `/logo.png` placeholder for 3 of 4 projects | ⏳ Pending user assets |
+| C2 | Content | 🔴 High | `featuredProjects` is a hardcoded `slice(0,3)` — 4th project never appears on home page | ✅ Resolved |
+| C3 | Content | 🟡 Medium | `endDate` on all projects set to `2026-11-01` — not meaningful | ✅ Resolved |
+| C4 | Content | 🟡 Medium | `experience.ts`: `description` and `achievements` arrays are near-identical duplicates in 3 of 4 roles | ✅ Resolved |
+| C5 | Content | 🟡 Medium | All experience entries use `/logo.png` as company logo | ℹ️ Clean fallback |
+| C6 | Content | 🟢 Low | Skills ratings are all 5/5 — does not differentiate proficiency levels | ✅ Resolved |
+| Q1 | Code Quality | 🔴 High | `<time dateTime>` uses `Date.now().toString()` instead of the actual project date | ✅ Resolved |
+| Q2 | Code Quality | 🟡 Medium | `page.tsx` list items use array index as React `key` in multiple places | ✅ Resolved |
+| Q3 | Code Quality | 🟡 Medium | `next.config.js` uses deprecated `turbopack.root` option | ✅ Resolved |
+| Q4 | Code Quality | 🟡 Medium | No error boundaries anywhere in the component tree | ✅ Resolved |
+| Q5 | Code Quality | 🟡 Medium | No `loading.tsx` streaming fallbacks for any route | ✅ Resolved |
+| Q6 | Code Quality | 🟢 Low | `projectId` page has an unused commented-out line (`{/* {<project.descriptionComponent />} */}`) | ✅ Resolved |
+| S1 | SEO | 🔴 High | OpenGraph image points to `profile-img.jpg` — no dedicated OG image (1200×630) | ℹ️ Portrait preview active |
+| S2 | SEO | 🟡 Medium | Project detail pages have no OpenGraph `image` in their `generateMetadata` | ✅ Resolved |
+| S3 | SEO | 🟡 Medium | `/resume` page is not listed in `routesConfig.mainNav` — not linked from the main navbar | ✅ Resolved |
+| S4 | SEO | 🟢 Low | `robots.txt` exists but has not been verified to allow all important routes | ✅ Verified & OK |
+| U1 | UX | 🟡 Medium | Contact form depends on Google Form env vars — if not configured, visitors see no error, form silently drops | ✅ Resolved (Direct email fallback) |
+| U2 | UX | 🟡 Medium | AI Twin chatbot shows a raw developer-facing fallback message (with `.env` instructions) to real visitors when `OPENROUTER_API_KEY` is missing | ✅ Resolved |
+| U3 | UX | 🟢 Low | "View All" buttons on home page sections use a chevron-down icon — misleading; should be chevron-right or an arrow | ✅ Resolved |
+| U4 | UX | 🟢 Low | Profile photo `alt` text includes the full job title — long for an `alt`, better as a brief label | ✅ Resolved |
+| P1 | Performance | 🟡 Medium | All `pagesInfoArr` images use `priority` prop — over-eagerly loaded, even for below-fold images | ✅ Resolved |
+| P2 | Performance | 🟡 Medium | No remote image domains configured in `next.config.js` — any future external image URLs will break | ✅ Resolved |
+| P3 | Performance | 🟢 Low | Duplicate EquipFlow images exist in two locations: `/public/images/` and `/public/projects/equipflow/` | ✅ Resolved (Cleaned up) |
+| D1 | Deployment | 🔴 High | `OPENROUTER_API_KEY` likely not set in the production environment — AI Twin will be offline for all real visitors | ℹ️ Requires user API key |
+| D2 | Deployment | 🟡 Medium | No `.env.example` file — environment variables required are not documented anywhere | ✅ Resolved |
+| D3 | Deployment | 🟡 Medium | No git repository initialized in the project folder — no version history, no easy deployment via GitHub | ✅ Resolved |
+| D4 | Deployment | 🟢 Low | `vercel.svg` and `next.svg` remain in `/public/` — template artifacts, not used in the portfolio | ✅ Resolved |
 
 ---
 
